@@ -1,0 +1,536 @@
+/* =========================
+   VARIÁVEIS
+========================= */
+
+:root {
+  --creme: #fdf8f2;
+  --black: #000000;
+  --black-100: #211f1f;
+  --gray-100: #f3f4f6;
+  --gray-300: #d0d5dd;
+  --gray-500: #667085;
+  --gray-700: #344054;
+  --yellow: #fed501;
+}
+
+
+/* =========================
+   RESET
+========================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+/* =========================
+   HTML
+========================= */
+
+html {
+  font-size: 14px;
+  scroll-behavior: smooth;
+}
+
+
+/* =========================
+   BODY
+========================= */
+
+body {
+  width: 100%;
+  max-width: 1512px;
+  margin: 0 auto;
+
+  background-color: var(--creme);
+  color: var(--black-100);
+
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+}
+
+
+/* =========================
+   ELEMENTOS GERAIS
+========================= */
+
+section {
+  width: 100%;
+}
+
+.container {
+  width: 100%;
+  max-width: 1020px;
+  margin: 0 auto;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Fraunces", serif;
+  font-weight: 300;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+header {
+  padding: 28px 0;
+}
+
+header nav {
+  width: calc(100% - 200px);
+  max-width: 1320px;
+  height: 44px;
+  margin: 0 auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  width: auto;
+  height: 30px;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+nav ul li {
+  white-space: nowrap;
+}
+
+
+/* =========================
+   BOTÕES
+========================= */
+
+.button {
+  display: inline-block;
+
+  padding: 10px 18px;
+
+  border-radius: 24px;
+
+  font-size: 14px;
+  line-height: 1.2;
+
+  transition: 0.2s ease;
+}
+
+.light-button {
+  border: 1px solid var(--black);
+  background-color: transparent;
+}
+
+.light-button:hover {
+  background-color: var(--black);
+  color: white;
+}
+
+.dark-button {
+  background-color: var(--black);
+  color: white;
+}
+
+.dark-button:hover {
+  opacity: 0.8;
+}
+
+
+/* =========================
+   MAIN
+========================= */
+
+main {
+  width: 100%;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+#hero {
+  text-align: center;
+  padding-top: 105px;
+  padding-bottom: 65px;
+}
+
+#hero .container {
+  max-width: 1215px;
+}
+
+.tag {
+  display: inline-block;
+
+  padding: 5px 12px;
+
+  margin-bottom: 24px;
+
+  border-radius: 20px;
+
+  background-color: #f0eeee;
+
+  color: var(--gray-700);
+
+  font-size: 13px;
+}
+
+#hero h1 {
+  max-width: 1000px;
+  margin: 0 auto 28px;
+
+  color: #101828;
+
+  font-size: 52px;
+  line-height: 1.08;
+  letter-spacing: -1px;
+}
+
+#hero p {
+  max-width: 700px;
+  margin: 0 auto;
+
+  color: var(--gray-500);
+
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+
+  margin-top: 34px;
+}
+
+#hero .button {
+  min-width: 104px;
+  text-align: center;
+}
+
+#hero > .container > img {
+  width: 100%;
+  max-width: 1215px;
+
+  margin: 63px auto 0;
+}
+
+
+/* =========================
+   WEBINAR
+========================= */
+
+#webinar {
+  min-height: 410px;
+
+  background-color: var(--yellow);
+
+  display: flex;
+  align-items: center;
+
+  text-align: center;
+}
+
+#webinar .container {
+  max-width: 900px;
+}
+
+#webinar h2 {
+  margin-bottom: 20px;
+
+  font-size: 34px;
+  line-height: 1.2;
+  color: var(--black);
+}
+
+#webinar p {
+  max-width: 650px;
+  margin: 0 auto;
+
+  font-size: 16px;
+  line-height: 1.5;
+
+  color: var(--black);
+}
+
+#webinar .button {
+  margin-top: 38px;
+}
+
+
+/* =========================
+   BENEFÍCIOS
+========================= */
+
+#benefits {
+  min-height: 420px;
+
+  display: flex;
+  align-items: center;
+
+  padding: 70px 0;
+}
+
+#benefits .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  gap: 120px;
+
+  max-width: 1020px;
+}
+
+#benefits .container > div {
+  text-align: center;
+}
+
+#benefits img {
+  width: 32px;
+  height: 32px;
+
+  margin: 0 auto 25px;
+}
+
+#benefits h2 {
+  max-width: 380px;
+  margin: 0 auto 15px;
+
+  color: #172033;
+
+  font-size: 26px;
+  line-height: 1.15;
+}
+
+#benefits p {
+  max-width: 390px;
+  margin: 0 auto;
+
+  color: var(--gray-500);
+
+  font-size: 14px;
+  line-height: 1.45;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+  min-height: 310px;
+
+  background-color: var(--black);
+  color: var(--gray-100);
+}
+
+footer .container {
+  max-width: 1215px;
+  padding: 55px 0 30px;
+}
+
+footer .logo {
+  height: 29px;
+  margin-bottom: 28px;
+}
+
+footer nav ul {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+
+  font-size: 14px;
+}
+
+footer nav {
+  margin-bottom: 45px;
+}
+
+footer hr {
+  border: 0;
+  border-top: 1px solid #344054;
+
+  margin-bottom: 28px;
+}
+
+.footer-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-info p {
+  color: #d0d5dd;
+  font-size: 13px;
+}
+
+.socials {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.socials img {
+  width: 18px;
+  height: 18px;
+}
+
+
+/* =========================
+   RESPONSIVIDADE
+========================= */
+
+@media (max-width: 1100px) {
+
+  header nav {
+    width: calc(100% - 60px);
+  }
+
+  .container {
+    width: calc(100% - 60px);
+  }
+
+  #hero .container {
+    width: calc(100% - 60px);
+  }
+
+  footer .container {
+    width: calc(100% - 60px);
+  }
+
+  nav ul {
+    gap: 15px;
+  }
+
+  #hero h1 {
+    font-size: 45px;
+  }
+
+  #benefits .container {
+    gap: 50px;
+  }
+}
+
+
+@media (max-width: 768px) {
+
+  header {
+    padding: 20px 0;
+  }
+
+  header nav {
+    width: calc(100% - 40px);
+  }
+
+  header nav ul {
+    display: none;
+  }
+
+  .container,
+  #hero .container,
+  footer .container {
+    width: calc(100% - 40px);
+  }
+
+  #hero {
+    padding-top: 70px;
+    padding-bottom: 50px;
+  }
+
+  #hero h1 {
+    font-size: 38px;
+  }
+
+  #hero p {
+    font-size: 15px;
+  }
+
+  #hero > .container > img {
+    margin-top: 45px;
+  }
+
+  #webinar {
+    min-height: 360px;
+  }
+
+  #webinar h2 {
+    font-size: 30px;
+  }
+
+  #benefits {
+    padding: 60px 0;
+  }
+
+  #benefits .container {
+    grid-template-columns: 1fr;
+    gap: 70px;
+  }
+
+  footer {
+    padding-bottom: 20px;
+  }
+
+  footer nav ul {
+    flex-wrap: wrap;
+    gap: 18px;
+  }
+
+  .footer-info {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 25px;
+  }
+}
+
+
+@media (max-width: 480px) {
+
+  #hero h1 {
+    font-size: 32px;
+  }
+
+  #hero p {
+    font-size: 14px;
+  }
+
+  .button-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .button-container .button {
+    width: 140px;
+  }
+
+  #webinar h2 {
+    font-size: 27px;
+  }
+
+  #benefits h2 {
+    font-size: 24px;
+  }
+}
